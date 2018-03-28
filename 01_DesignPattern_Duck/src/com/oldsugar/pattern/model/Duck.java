@@ -2,6 +2,9 @@ package com.oldsugar.pattern.model;
 
 import com.oldsugar.pattern.dao.FlyBehavior;
 import com.oldsugar.pattern.dao.QuackBehavior;
+import com.oldsugar.pattern.dao.impl.RocketFlyImpl;
+import com.oldsugar.pattern.product.MallardDuck;
+import com.oldsugar.pattern.product.ModelDuck;
 
 public abstract class Duck {
 	
@@ -28,4 +31,18 @@ public abstract class Duck {
 		quackBehavior.quack();
 	}
 
+	
+	
+	
+	public static void main(String[] args) {
+		Duck mallardDuck = new MallardDuck();
+		mallardDuck.performQuack();
+		mallardDuck.performFly();
+		
+		Duck modelDuck = new ModelDuck();
+		modelDuck.performQuack();
+		modelDuck.performFly();
+		modelDuck.setFlyBehavior(new RocketFlyImpl());
+		modelDuck.performFly();
+	}
 }
