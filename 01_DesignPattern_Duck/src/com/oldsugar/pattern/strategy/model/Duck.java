@@ -1,10 +1,10 @@
-package com.oldsugar.pattern.model;
+package com.oldsugar.pattern.strategy.model;
 
-import com.oldsugar.pattern.dao.FlyBehavior;
-import com.oldsugar.pattern.dao.QuackBehavior;
-import com.oldsugar.pattern.dao.impl.RocketFlyImpl;
-import com.oldsugar.pattern.product.MallardDuck;
-import com.oldsugar.pattern.product.ModelDuck;
+import com.oldsugar.pattern.strategy.dao.FlyBehavior;
+import com.oldsugar.pattern.strategy.dao.QuackBehavior;
+import com.oldsugar.pattern.strategy.dao.impl.RocketFlyImpl;
+import com.oldsugar.pattern.strategy.product.MallardDuck;
+import com.oldsugar.pattern.strategy.product.ModelDuck;
 
 public abstract class Duck {
 	
@@ -20,7 +20,7 @@ public abstract class Duck {
 	
 	public abstract void display();
 	public void swim() {
-		System.out.println("swim¡£¡£¡£¡£¡£¡£¡£¡£");
+		System.out.println("swimï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	}
 	
 	public void performFly() {
